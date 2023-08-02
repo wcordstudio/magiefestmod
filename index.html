@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiMagieFest - Moderator Version</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: rgb(32, 32, 32);
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            transition: background-color 0.5s ease;
+            background-color: #E9E9E9;
+        }
+        button{background-color: transparent;border: white 1px solid;border-radius: 8px;color: white;padding: 6px 10px;font-family: Arial, Helvetica, sans-serif;}
+        #widgets{margin: 60px;justify-content: center;justify-items: center;display: flex;}
+        #credito{
+            padding: 12px;
+            text-align: center;
+            display: block;
+            font-weight: bold;
+        }
+    </style>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="fix.css">
+</head>
+<body>
+    <header>
+        <h1>MultiMagieFest</h1>
+        <div>
+            <button id="full_screen" onclick="alternarPantallaCompleta()">Pantalla completa</button>
+            <button id="night_mode" onclick="toggleFondo()">Modo Oscuro</button>
+        </div>
+        
+    </header>
+    <div id="widgets">
+        <iframe width="860" height="490" src="https://www.youtube.com/embed/0H6n1aK0ZSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="400" height="490" src="https://www.youtube.com/watch?v=UGov-KH7hkM"></iframe>
+        <iframe width="400" height="490" src="https://www.twitch.tv/magieteam_official/chat"></iframe>
+    </div>
+    <div id="credito">
+        <span>Creado por Pezzar ❤️</span>
+    </div>
+</body>
+</html>
