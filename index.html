@@ -33,6 +33,13 @@
     </style>
     <script src="javascript.js"></script>
     <link rel="stylesheet" href="fix.css">
+    <!-- Importante NO TOCAR -->
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {
+          channel: "magieteam_official"
+        });
+      </script>
 </head>
 <body>
     <header>
@@ -43,10 +50,17 @@
         </div>
         
     </header>
+    <div id="twitch-embed">
     <div id="widgets">
         <iframe width="860" height="490" src="https://www.youtube.com/embed/0H6n1aK0ZSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <iframe width="400" height="490" src="https://www.youtube.com/watch?v=UGov-KH7hkM"></iframe>
-        <iframe width="400" height="490" src="https://www.twitch.tv/magieteam_official/chat"></iframe>
+        <iframe
+        id="chat_embed"
+        src="https://www.twitch.tv/embed/magieteam_official/chat?parent=https://multimagiefest.netlify.app"
+        height="500"
+        width="350">
+        </iframe>
+    </div>
     </div>
     <div id="credito">
         <span>Creado por Pezzar ❤️</span>
